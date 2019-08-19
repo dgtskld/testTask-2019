@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Sony Ericsson k790i</string>
+		<key>description</key>
+		<string>Мобильный телефон линейки Cybershot</string>
+		<key>price</key>
+		<string>10000</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Samsung A5</string>
+		<key>description</key>
+		<string>Бюджетная модель Samsung</string>
+		<key>price</key>
+		<string>3000</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>HTC Wildfire S</string>
+		<key>description</key>
+		<string>Бюджетная модель HTC</string>
+		<key>price</key>
+		<string>7000</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Motorolla E398</string>
+		<key>description</key>
+		<string>Стереодинамики и противный звук разрядки аккумулятора!</string>
+		<key>price</key>
+		<string>5000</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Siemens C55</string>
+		<key>description</key>
+		<string>Не старье, а ретро</string>
+		<key>price</key>
+		<string>2500</string>
+	</dict>
+</array>
+</plist>

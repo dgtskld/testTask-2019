@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E754FC57230A03C400DA7583 /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754FC56230A03C400DA7583 /* SellViewController.swift */; };
+		E754FC59230A199B00DA7583 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754FC58230A199B00DA7583 /* ItemCell.swift */; };
+		E754FC5B230A1D4200DA7583 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754FC5A230A1D4200DA7583 /* ConfigurableCell.swift */; };
+		E754FC5D230AFFA000DA7583 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754FC5C230AFFA000DA7583 /* InfoViewController.swift */; };
 		E76F75FB2308D890007C4C0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F75FA2308D890007C4C0B /* AppDelegate.swift */; };
-		E76F75FD2308D890007C4C0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F75FC2308D890007C4C0B /* ViewController.swift */; };
 		E76F76002308D890007C4C0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76F75FE2308D890007C4C0B /* Main.storyboard */; };
 		E76F76032308D890007C4C0B /* RamaxTestTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E76F76012308D890007C4C0B /* RamaxTestTask.xcdatamodeld */; };
 		E76F76052308D891007C4C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E76F76042308D891007C4C0B /* Assets.xcassets */; };
 		E76F76082308D891007C4C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76F76062308D891007C4C0B /* LaunchScreen.storyboard */; };
 		E76F76132308D892007C4C0B /* RamaxTestTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F76122308D892007C4C0B /* RamaxTestTaskTests.swift */; };
+		E76F76242308E398007C4C0B /* goods.plist in Resources */ = {isa = PBXBuildFile; fileRef = E76F76232308E398007C4C0B /* goods.plist */; };
+		E76F76262308E3B4007C4C0B /* goods.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F76252308E3B4007C4C0B /* goods.swift */; };
+		E76F76282308E3DE007C4C0B /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F76272308E3DE007C4C0B /* MasterViewController.swift */; };
+		E76F762C2308E411007C4C0B /* BuyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F762B2308E411007C4C0B /* BuyTableViewController.swift */; };
+		E76F762E2308E4A7007C4C0B /* GoodsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F762D2308E4A7007C4C0B /* GoodsDataSource.swift */; };
+		E76F76312308E60D007C4C0B /* ReusableIndetifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F76302308E60D007C4C0B /* ReusableIndetifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E754FC56230A03C400DA7583 /* SellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
+		E754FC58230A199B00DA7583 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		E754FC5A230A1D4200DA7583 /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		E754FC5C230AFFA000DA7583 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		E76F75F72308D890007C4C0B /* RamaxTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RamaxTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76F75FA2308D890007C4C0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E76F75FC2308D890007C4C0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E76F75FF2308D890007C4C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E76F76022308D890007C4C0B /* RamaxTestTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RamaxTestTask.xcdatamodel; sourceTree = "<group>"; };
 		E76F76042308D891007C4C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +50,12 @@
 		E76F760E2308D892007C4C0B /* RamaxTestTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RamaxTestTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76F76122308D892007C4C0B /* RamaxTestTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamaxTestTaskTests.swift; sourceTree = "<group>"; };
 		E76F76142308D892007C4C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E76F76232308E398007C4C0B /* goods.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = goods.plist; sourceTree = "<group>"; };
+		E76F76252308E3B4007C4C0B /* goods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goods.swift; sourceTree = "<group>"; };
+		E76F76272308E3DE007C4C0B /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		E76F762B2308E411007C4C0B /* BuyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTableViewController.swift; sourceTree = "<group>"; };
+		E76F762D2308E4A7007C4C0B /* GoodsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsDataSource.swift; sourceTree = "<group>"; };
+		E76F76302308E60D007C4C0B /* ReusableIndetifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableIndetifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +97,12 @@
 		E76F75F92308D890007C4C0B /* RamaxTestTask */ = {
 			isa = PBXGroup;
 			children = (
-				E76F75FA2308D890007C4C0B /* AppDelegate.swift */,
-				E76F75FC2308D890007C4C0B /* ViewController.swift */,
-				E76F75FE2308D890007C4C0B /* Main.storyboard */,
-				E76F76042308D891007C4C0B /* Assets.xcassets */,
-				E76F76062308D891007C4C0B /* LaunchScreen.storyboard */,
+				E76F762F2308E5E2007C4C0B /* Protocols and Extensions */,
+				E76F76222308E317007C4C0B /* Views */,
+				E76F76212308E305007C4C0B /* Model */,
+				E76F76202308E2EE007C4C0B /* Delegates and DataSources */,
+				E76F761D2308E2D3007C4C0B /* View Controllers */,
 				E76F76092308D891007C4C0B /* Info.plist */,
-				E76F76012308D890007C4C0B /* RamaxTestTask.xcdatamodeld */,
 			);
 			path = RamaxTestTask;
 			sourceTree = "<group>";
@@ -97,6 +114,56 @@
 				E76F76142308D892007C4C0B /* Info.plist */,
 			);
 			path = RamaxTestTaskTests;
+			sourceTree = "<group>";
+		};
+		E76F761D2308E2D3007C4C0B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E76F76272308E3DE007C4C0B /* MasterViewController.swift */,
+				E76F762B2308E411007C4C0B /* BuyTableViewController.swift */,
+				E754FC56230A03C400DA7583 /* SellViewController.swift */,
+				E754FC5C230AFFA000DA7583 /* InfoViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E76F76202308E2EE007C4C0B /* Delegates and DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				E76F75FA2308D890007C4C0B /* AppDelegate.swift */,
+				E76F762D2308E4A7007C4C0B /* GoodsDataSource.swift */,
+			);
+			name = "Delegates and DataSources";
+			sourceTree = "<group>";
+		};
+		E76F76212308E305007C4C0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E76F76012308D890007C4C0B /* RamaxTestTask.xcdatamodeld */,
+				E76F76232308E398007C4C0B /* goods.plist */,
+				E76F76252308E3B4007C4C0B /* goods.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E76F76222308E317007C4C0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E76F76042308D891007C4C0B /* Assets.xcassets */,
+				E76F75FE2308D890007C4C0B /* Main.storyboard */,
+				E76F76062308D891007C4C0B /* LaunchScreen.storyboard */,
+				E754FC58230A199B00DA7583 /* ItemCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E76F762F2308E5E2007C4C0B /* Protocols and Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E76F76302308E60D007C4C0B /* ReusableIndetifier.swift */,
+				E754FC5A230A1D4200DA7583 /* ConfigurableCell.swift */,
+			);
+			name = "Protocols and Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E76F76082308D891007C4C0B /* LaunchScreen.storyboard in Resources */,
+				E76F76242308E398007C4C0B /* goods.plist in Resources */,
 				E76F76052308D891007C4C0B /* Assets.xcassets in Resources */,
 				E76F76002308D890007C4C0B /* Main.storyboard in Resources */,
 			);
@@ -200,8 +268,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E76F75FD2308D890007C4C0B /* ViewController.swift in Sources */,
+				E754FC5B230A1D4200DA7583 /* ConfigurableCell.swift in Sources */,
+				E754FC5D230AFFA000DA7583 /* InfoViewController.swift in Sources */,
+				E76F76282308E3DE007C4C0B /* MasterViewController.swift in Sources */,
+				E76F76312308E60D007C4C0B /* ReusableIndetifier.swift in Sources */,
+				E754FC59230A199B00DA7583 /* ItemCell.swift in Sources */,
+				E754FC57230A03C400DA7583 /* SellViewController.swift in Sources */,
+				E76F762C2308E411007C4C0B /* BuyTableViewController.swift in Sources */,
 				E76F75FB2308D890007C4C0B /* AppDelegate.swift in Sources */,
+				E76F762E2308E4A7007C4C0B /* GoodsDataSource.swift in Sources */,
+				E76F76262308E3B4007C4C0B /* goods.swift in Sources */,
 				E76F76032308D890007C4C0B /* RamaxTestTask.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
