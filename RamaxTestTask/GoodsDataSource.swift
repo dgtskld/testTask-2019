@@ -24,6 +24,7 @@ final class GoodsDataSource: NSObject {
         guard let items = NSArray(contentsOfFile: name) as? [Dictionary<String,String>] else {
             return
         }
+        goods.removeAll()
         for item in items {
             if let oneOfGoods = Item(dictionary: item) {
                 goods.append(oneOfGoods)

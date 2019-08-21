@@ -19,6 +19,10 @@ class InfoViewController: UIViewController {
     var priceToBeWritten = String()
     
     override func viewWillAppear(_ animated: Bool) {
+        labelName.text = nameToBeWritten
+        labelDescription.text = descriptionToBeWritten
+        labelDescription.translatesAutoresizingMaskIntoConstraints = true
+        labelDescription.sizeToFit()
         labelPrice.text = priceToBeWritten
     }
     

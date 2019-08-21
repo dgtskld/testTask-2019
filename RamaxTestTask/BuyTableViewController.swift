@@ -24,6 +24,9 @@ class BuyTableViewController: UITableViewController {
         tableView.estimatedRowHeight = UITableView.automaticDimension
         tableView.delegate = self
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         loadData()
     }
     
@@ -55,11 +58,13 @@ class BuyTableViewController: UITableViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if  segue.identifier == "infoViewControllerIdentifier",
+        if  segue.identifier == "viewInfoSegue",
             let destinationViewController = segue.destination as? InfoViewController,
             let dataIndex = tableView.indexPathForSelectedRow?.row
         {
-            destinationViewController.priceToBeWritten = String(dataIndex)
+            destinationViewController.nameToBeWritten = goods[dataIndex].name
+            destinationViewController.descriptionToBeWritten = goods[dataIndex].description!
+            destinationViewController.priceToBeWritten = goods[dataIndex].price!
         }
     }
     

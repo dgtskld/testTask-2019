@@ -29,10 +29,24 @@ class SellViewController: UIViewController {
         do {
             let data = try encoder.encode(goods)
             try data.write(to: path)
-//            try data.write(to: path, options: <#T##Data.WritingOptions#>)
         } catch {
             print(error)
         }
+        showAlert()
+    }
+    
+    func showAlert () {
+        let alert = UIAlertController(title: "Success", message: "Product added successfully.", preferredStyle: .alert)
+        let closeAction = UIAlertAction(title: "OK", style: .default) { (action: UIAlertAction!) -> Void in }
+        alert.addAction(closeAction)
+        present(alert, animated: true,completion: {
+            self.fieldName!.text = ""
+            self.fieldDescription!.text = ""
+            self.fieldPrice!.text = ""
+        })
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         
     }
     
