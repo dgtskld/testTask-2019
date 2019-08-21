@@ -11,7 +11,7 @@ import UIKit
 class InfoViewController: UIViewController {
 
     @IBOutlet var labelName : UILabel!
-    @IBOutlet var labelDescription : UILabel!
+    @IBOutlet var textViewDescription : UITextView!
     @IBOutlet var labelPrice : UILabel!
     
     var nameToBeWritten = String()
@@ -20,9 +20,9 @@ class InfoViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         labelName.text = nameToBeWritten
-        labelDescription.text = descriptionToBeWritten
-        labelDescription.translatesAutoresizingMaskIntoConstraints = true
-        labelDescription.sizeToFit()
+        textViewDescription.text = descriptionToBeWritten
+        textViewDescription.translatesAutoresizingMaskIntoConstraints = true
+        textViewDescription.sizeToFit()
         labelPrice.text = priceToBeWritten
     }
     

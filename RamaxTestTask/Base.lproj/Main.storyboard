@@ -85,7 +85,7 @@
                                 <rect key="frame" x="20" y="331" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jc-q8-dyt">
                                 <rect key="frame" x="20" y="395" width="374" height="30"/>
@@ -235,7 +235,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yc4-Mi-Wc1">
-                                <rect key="frame" x="20" y="108" width="374" height="45"/>
+                                <rect key="frame" x="20" y="108" width="45" height="45"/>
                                 <accessibility key="accessibilityConfiguration" label="labelName"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="rGH-08-CV2"/>
@@ -244,18 +244,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X16-T8-O1A">
-                                <rect key="frame" x="20" y="173" width="374" height="90"/>
-                                <accessibility key="accessibilityConfiguration" label="labelDescription"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="aeF-c4-f2o"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUq-c3-EYc">
-                                <rect key="frame" x="20" y="283" width="374" height="45"/>
+                                <rect key="frame" x="20" y="320" width="374" height="45"/>
                                 <accessibility key="accessibilityConfiguration" label="labelPrice"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="sEy-KG-uz0"/>
@@ -264,26 +254,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xDf-ng-zw9">
+                                <rect key="frame" x="20" y="161" width="374" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" label="textViewDescription"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yc4-Mi-Wc1" firstAttribute="centerX" secondItem="X16-T8-O1A" secondAttribute="centerX" id="0aN-F6-BQT"/>
-                            <constraint firstItem="X16-T8-O1A" firstAttribute="top" secondItem="yc4-Mi-Wc1" secondAttribute="bottom" constant="20" id="69B-Cm-JkT"/>
-                            <constraint firstItem="gUq-c3-EYc" firstAttribute="top" secondItem="X16-T8-O1A" secondAttribute="bottom" constant="20" id="9bB-ko-MBB"/>
-                            <constraint firstItem="4vG-Ei-jbt" firstAttribute="trailing" secondItem="X16-T8-O1A" secondAttribute="trailing" constant="20" id="RvB-23-xVX"/>
+                            <constraint firstItem="xDf-ng-zw9" firstAttribute="top" secondItem="yc4-Mi-Wc1" secondAttribute="bottom" constant="8" symbolic="YES" id="9L2-Xe-0d4"/>
+                            <constraint firstItem="gUq-c3-EYc" firstAttribute="trailing" secondItem="xDf-ng-zw9" secondAttribute="trailing" id="Atw-Ow-wrN"/>
                             <constraint firstItem="gUq-c3-EYc" firstAttribute="leading" secondItem="4vG-Ei-jbt" secondAttribute="leading" constant="20" id="UAn-O3-4zx"/>
                             <constraint firstItem="yc4-Mi-Wc1" firstAttribute="leading" secondItem="4vG-Ei-jbt" secondAttribute="leading" constant="20" id="bnG-zC-fte"/>
-                            <constraint firstItem="X16-T8-O1A" firstAttribute="leading" secondItem="4vG-Ei-jbt" secondAttribute="leading" constant="20" id="qMp-rf-ciC"/>
+                            <constraint firstItem="gUq-c3-EYc" firstAttribute="leading" secondItem="xDf-ng-zw9" secondAttribute="leading" id="jhQ-Xi-Uy6"/>
+                            <constraint firstItem="gUq-c3-EYc" firstAttribute="top" secondItem="xDf-ng-zw9" secondAttribute="bottom" constant="31" id="n1X-8x-mac"/>
+                            <constraint firstItem="4vG-Ei-jbt" firstAttribute="bottom" secondItem="gUq-c3-EYc" secondAttribute="bottom" constant="497" id="rjk-Nk-YKo"/>
                             <constraint firstItem="4vG-Ei-jbt" firstAttribute="trailing" secondItem="gUq-c3-EYc" secondAttribute="trailing" constant="20" id="s2i-8o-j5G"/>
-                            <constraint firstItem="gUq-c3-EYc" firstAttribute="top" secondItem="X16-T8-O1A" secondAttribute="bottom" constant="20" id="saj-DO-bAi"/>
                             <constraint firstItem="yc4-Mi-Wc1" firstAttribute="top" secondItem="4vG-Ei-jbt" secondAttribute="top" constant="20" id="wQb-2C-V9e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4vG-Ei-jbt"/>
                     </view>
                     <connections>
-                        <outlet property="labelDescription" destination="X16-T8-O1A" id="FgE-zc-UT5"/>
                         <outlet property="labelName" destination="yc4-Mi-Wc1" id="8XZ-KX-PUR"/>
                         <outlet property="labelPrice" destination="gUq-c3-EYc" id="26V-oQ-d7X"/>
+                        <outlet property="textViewDescription" destination="xDf-ng-zw9" id="Q0c-KO-ClU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oks-1v-ljH" userLabel="First Responder" sceneMemberID="firstResponder"/>

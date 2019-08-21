@@ -10,10 +10,10 @@ import UIKit
 
 class SellViewController: UIViewController {
 
-    @IBOutlet private var fieldName : UITextField?
-    @IBOutlet private var fieldDescription : UITextField?
-    @IBOutlet private var fieldPrice : UITextField?
-    @IBOutlet private var buttonSell : UIButton?;
+    @IBOutlet private var fieldName : UITextField!
+    @IBOutlet private var fieldDescription : UITextField!
+    @IBOutlet private var fieldPrice : UITextField!
+    @IBOutlet private var buttonSell : UIButton!;
     
     @IBAction func addToBuyList (_ sender : UIButton) {
         
@@ -47,7 +47,7 @@ class SellViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        self.fieldName!.becomeFirstResponder()
     }
     
     override func viewDidLoad() {
