@@ -20,7 +20,7 @@ extension ItemCell : ConfigurableCell {
     
     func configure(object: Item) {
         labelName.text = object.name;
-        labelPrice.text = String(object.price);
+        labelPrice.text = String(object.price!);
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

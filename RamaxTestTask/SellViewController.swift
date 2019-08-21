@@ -17,7 +17,9 @@ class SellViewController: UIViewController {
     
     @IBAction func addToBuyList (_ sender : UIButton) {
         
-        let storedItem = Item(name: fieldName!.text!, description: fieldDescription!.text!, price: Double(fieldPrice!.text!) as! Double)
+        let storedItem = Item(name: fieldName!.text!, description: fieldDescription!.text!, price: fieldPrice!.text!)
+        
+        goods.append(storedItem)
         
         let encoder = PropertyListEncoder()
         encoder.outputFormat = .xml
@@ -25,7 +27,7 @@ class SellViewController: UIViewController {
         let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("goods.plist")
         
         do {
-            let data = try encoder.encode(storedItem)
+            let data = try encoder.encode(goods)
             try data.write(to: path)
 //            try data.write(to: path, options: <#T##Data.WritingOptions#>)
         } catch {

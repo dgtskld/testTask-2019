@@ -11,15 +11,14 @@ import Foundation
 struct Item : Codable {
     let name : String
     let description : String?
-    let price : Double
+    let price : String?
 }
 
 extension Item {
     init?(dictionary: Dictionary<String, String>) {
         guard let name = dictionary["name"],
             let description = dictionary["description"],
-            let priceItem = dictionary["price"],
-            let price = Double(priceItem) else {
+            let price = dictionary["price"] else {
                 return nil
         }
         
@@ -28,3 +27,8 @@ extension Item {
         self.price = price
     }
 }
+
+
+//Большой косяк с архитектурой, да, здесь как временное решение,
+//в работе такого делать не буду и потом исправлю
+var goods = [Item]()

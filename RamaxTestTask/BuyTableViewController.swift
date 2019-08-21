@@ -28,9 +28,24 @@ class BuyTableViewController: UITableViewController {
     }
     
     func loadData() {
-        if let plistPath = Bundle.main.path(forResource: "goods", ofType: "plist") {
-            goodsDataSource = GoodsDataSource(tableView: tableView, from: plistPath)
-            tableView.dataSource = goodsDataSource
+        let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+        let url = NSURL(fileURLWithPath: path)
+        if let pathComponent = url.appendingPathComponent("goods.plist") {
+            let fileManager = FileManager.default
+            if fileManager.fileExists(atPath: pathComponent.path) {
+                goodsDataSource = GoodsDataSource(tableView: tableView, from: pathComponent.path)
+                tableView.dataSource = goodsDataSource
+            } else {
+                if let plistPath = Bundle.main.path(forResource: "goods", ofType: "plist") {
+                    goodsDataSource = GoodsDataSource(tableView: tableView, from: plistPath)
+                    tableView.dataSource = goodsDataSource
+                }
+            }
+        } else {
+            if let plistPath = Bundle.main.path(forResource: "goods", ofType: "plist") {
+                goodsDataSource = GoodsDataSource(tableView: tableView, from: plistPath)
+                tableView.dataSource = goodsDataSource
+            }
         }
     }
     

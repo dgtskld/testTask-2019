@@ -5,7 +5,7 @@ import UIKit
 final class GoodsDataSource: NSObject {
 
     private let tableView: UITableView
-    private var goods = [Item]()
+//    private var goods = [Item]()
     
     init(tableView: UITableView, from path: String) {
         self.tableView = tableView
